@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!-- <typedef class="Demo.Employee"  name="Gender" >
+<param name="enumClass">Demo.Gender</param>
+		<param name="identifierMethod">getVals</param>
+		<param name="valueOfMethod">getType</param>
+		</typedef> -->
+
+<class name="Demo.Employee" table="EMP_DTL" >
+<id name="empId" type ="int">
+<column name="empId" ></column>
+<generator class="increment">
+</generator>
+</id>
+<property name="name"></property>
+<property name="designation"></property>
+<!-- <property name="Gender"></property>
+ -->
+
+<!-- <many-to-one name="address" column="address"  class="Demo.Address" not-null="true" ></many-to-one>-->
+
+ <set name="certificate"  cascade="save-update"  table="emp_cert_count">
+<key column="empId" ></key>
+<many-to-many column="cert_count" class="Demo.Certificate"></many-to-many>
+</set>
+</class>
+
+<!-- <class name="Demo.Address" table="Address">
+<id name="empId" type ="int">
+<column name="empId"></column>
+<generator class="increment">
+</generator>
+</id>
+<property name="Country"></property>
+<property name="City"></property>
+<property name="locality"></property>
+<property name="pin"></property>
+</class> -->
+
+<class name="Demo.Certificate" table="Ceritfication">
+<id name="cert_id" type="int">
+<column name="certId"></column>
+<generator class="increment"></generator>
+</id>
+<property name="cert_name"  not-null="true" ></property>
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/common_log"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/oracle"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hibernate 3.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jre 1.8"/>
+	<classpathentry kind="lib" path="C:/bhrigu/log4j-over-slf4j-1.7.2.jar/log4j-over-slf4j-1.7.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/slf4j"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring 2.0"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
